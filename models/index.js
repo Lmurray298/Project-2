@@ -40,3 +40,8 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = db;
+
+var button = document.getElementById('binge');
+button.onclick = function() {
+  location.assign('views/layouts/movie.handlebars');
+}
