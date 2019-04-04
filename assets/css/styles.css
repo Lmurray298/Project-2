@@ -1,92 +1,126 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .firstbody {
-    background-color: black;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 } 
 
 .btnbox{
-    width: 183px;
-    height: 90px;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    margin-left: 600px;
-    margin-top: 300px;
+  width: 183px;
+  height: 90px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-left: 600px;
+  margin-top: 300px;
 }
 
 #binge{
-    animation: shadow-pulse 1s infinite;
+  animation: shadow-pulse 1s infinite;
 }
 
 #binge:hover {
-    animation: none;
+  animation: none;
 }
 
 @keyframes shadow-pulse
 {
-     0% {
-          box-shadow: 0 0 0 0px rgba(250, 4, 4, 0.705);
-     }
-     100% {
-          box-shadow: 0 0 0 35px rgba(248, 3, 3, 0);
-     }
+   0% {
+        box-shadow: 0 0 0 0px rgba(250, 4, 4, 0.705);
+   }
+   100% {
+        box-shadow: 0 0 0 35px rgba(248, 3, 3, 0);
+   }
 }
 
-body {
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
-  }
-  
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-    width: 100%;
-    height: 340px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+#sBody{
+  background-color: rgb(73, 58, 50);
+  color: white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
 
+hr {
+  border: none;
+  height: 4px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+.secondbody {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+input{
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+button{
+  margin-left: 177px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px 16px 0px 16px;
+  width: 100%;
+  height: 340px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f3f6f7, 0 0 40px #0ae5f5, 0 0 50px #0ae5f5, 0 0 60px #0ae5f5, 0 0 70px #00aaf8;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #0ae5f5, 0 0 40px #0ae5f5, 0 0 50px #0ae5f5, 0 0 60px #0ae5f5, 0 0 70px #0ae5f5, 0 0 80px #0ae5f5;
+  }
+}
