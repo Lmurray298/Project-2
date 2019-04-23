@@ -1,14 +1,14 @@
 {
   "development": {
       "username": "root",
-      "password": "",
+      "password": "liam2898",
       "database": "binge",
       "host": "127.0.0.1",
       "dialect": "mysql"
   },
   "test": {
       "username": "root",
-      "password": "",
+      "password": "liam2898",
       "database": "binge",
       "host": "localhost",
       "dialect": "mysql",
